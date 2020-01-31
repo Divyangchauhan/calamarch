@@ -12,7 +12,7 @@ work_dir=work
 out_dir=out
 gpg_key=
 
-verbose=""
+verbose="-v"
 script_path=$(readlink -f ${0%/*})
 
 umask 0022
