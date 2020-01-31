@@ -2,7 +2,12 @@
 
 set -e -u
 
+echo "Changing ownership of airootfs"
 chown -R root:root airootfs
+
+echo "Removing work and out directories"
+rm -rf work/
+rm -rf out/
 
 iso_name=archlinux
 iso_label="ARCH_$(date +%Y%m)"
