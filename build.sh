@@ -2,6 +2,8 @@
 
 set -e -u
 
+chown -R root:root airootfs
+
 iso_name=archlinux
 iso_label="ARCH_$(date +%Y%m)"
 iso_publisher="Arch Linux <http://www.archlinux.org>"
