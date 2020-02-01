@@ -81,4 +81,5 @@ xl2tpd
 
 # calamarch packages
 openbox
+xorg-server
 xorg-xinit
