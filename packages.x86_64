@@ -78,3 +78,6 @@ wpa_supplicant
 wvdial
 xfsprogs
 xl2tpd
+
+# calamarch packages
+openbox
