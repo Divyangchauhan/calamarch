@@ -21,3 +21,6 @@ sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 
 systemctl enable pacman-init.service choose-mirror.service
 systemctl set-default multi-user.target
+
+useradd -m -g users -G audio,video,network,wheel,storage,rfkill -s /bin/bash liveuser
+echo -e "password\npassword" | passwd liveuser
