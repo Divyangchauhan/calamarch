@@ -81,5 +81,7 @@ xl2tpd
 
 # calamarch packages
 openbox
+ttf-dejavu
+xorg-fonts-misc
 xorg-server
 xorg-xinit
