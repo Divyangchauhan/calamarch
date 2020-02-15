@@ -9,10 +9,10 @@ echo "Removing work and out directories"
 rm -rf work/
 rm -rf out/
 
-iso_name=archlinux
-iso_label="ARCH_$(date +%Y%m)"
-iso_publisher="Arch Linux <http://www.archlinux.org>"
-iso_application="Arch Linux Live/Rescue CD"
+iso_name=calamarch
+iso_label="calamarch"
+iso_publisher="Arne Van Gestel"
+iso_application="Calamarch - Arch installer iso"
 iso_version=$(date +%Y.%m.%d)
 install_dir=arch
 work_dir=work
@@ -228,7 +228,7 @@ make_prepare() {
 
 # Build ISO
 make_iso() {
-    mkarchiso ${verbose} -w "${work_dir}" -D "${install_dir}" -L "${iso_label}" -P "${iso_publisher}" -A "${iso_application}" -o "${out_dir}" iso "${iso_name}-${iso_version}-x86_64.iso"
+    mkarchiso ${verbose} -w "${work_dir}" -D "${install_dir}" -L "${iso_label}" -P "${iso_publisher}" -A "${iso_application}" -o "${out_dir}" iso "${iso_name}.iso"
 }
 
 if [[ ${EUID} -ne 0 ]]; then
